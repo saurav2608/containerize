@@ -62,7 +62,7 @@ conda env create -q --file=envs/code.yml
 echo "activate code"
 conda activate code
 
-sudo mlflow models build-docker -m wasbs://artifacts@backendstore.blob.core.windows.net/models/0/0bd78d9b09e3498b825ebdf0a0cf7871/artifacts/model -n "brillio-model"
-sudo docker login --username=csaurav --password=$DOCKER_PASSWORD
-sudo docker tag 316cb35955a0 csaurav/sc-model:production
-sudo docker push csaurav/sc-model:production
+mlflow models build-docker -m wasbs://artifacts@backendstore.blob.core.windows.net/models/0/0bd78d9b09e3498b825ebdf0a0cf7871/artifacts/model -n "brillio-model"
+docker login --username=csaurav --password=$DOCKER_PASSWORD
+docker tag 316cb35955a0 csaurav/sc-model:production
+docker push csaurav/sc-model:production
