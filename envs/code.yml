@@ -10,5 +10,5 @@ dependencies:
   - pip:
     - azure-storage
     - pytest
-    - azure-storage-blob==2.
+    - azure-storage
     - mlflow[extras]
