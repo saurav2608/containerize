@@ -10,3 +10,4 @@ dependencies:
     - azure-storage
     - pytest
     - azure-storage-blob==12.1.0
+    - mlflow[extras]
