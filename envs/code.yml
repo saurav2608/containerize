@@ -1,0 +1,12 @@
+name: code 
+channels:
+  - conda-forge
+dependencies:
+  # required
+  - pandas
+  - pip
+
+  - pip:
+    - azure-storage
+    - pytest
+    - azure-storage-blob==12.1.0
