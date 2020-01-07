@@ -67,5 +67,3 @@ mlflow models build-docker -m $var
 docker login --username=csaurav --password=$DOCKER_PASSWORD
 docker tag brillio-model csaurav/brillio-model:production
 docker push csaurav/brillio-model:production
-
-ssh saurav@52.187.6.56 'docker stop tart $(docker ps -a -q)' 'docker run csaurav/brillio-model:production'
